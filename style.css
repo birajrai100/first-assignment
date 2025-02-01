@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gra500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+  }
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  line-height: normal;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--Yellow);
+  font-family: figtree;
+}
+.container {
+  background: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 550px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+
+}
+.display {
+  border-radius: 10px;
+}
+.learning {
+  width: fit-content;
+  border-radius: 5px;
+  padding: 7px 13px;
+  background: var(--Yellow);
+}
+p, h1 {
+  color: var(--Gray950);
+}
+#para {
+  color: var(--Gra500);
+  font-weight: 500;
+  font-size: 16px;
+}
+.published {
+    font-size: 15px;
+}
+.learning, .person {
+  font-weight: 800;
+}
+#portray {
+  width: 35px;
+}
+h1 {
+  font-size: 25px;
+  font-weight: 800;
+
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.person {
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    background-color: var(--Yellow);
+    padding:  30px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 375px;
+    height:450px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+  }
+  .display {
+    border-radius: 10px;
+  }
+  .learning {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    background: var(--Yellow);
+  }
+  #para {
+    color: var(--Gra500);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: inherit;
+  }
+  h1 {
+    font-size: large;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  .person {
+    margin-left: 10px;
+  }
+}
+
+
+
